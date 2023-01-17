@@ -1,0 +1,9 @@
+export default function Navbar(props) {
+  return (
+    <nav className="navbar navbar-expanded-lg navbar-dark bg-dark fixed-top">
+      <div className="container">
+        <a className="navbar-brand" href="#">React Fundamentals: {props.title}</a>
+      </div>
+    </nav>
+  )
+}

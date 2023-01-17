@@ -1,0 +1,14 @@
+import React, {StrictMode} from "react";
+import ReactDOM from "react-dom/client";
+import App from "./components/App"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "../src/static/index.css"
+
+const rootElement = document.getElementById('root')
+const root = ReactDOM.createRoot(rootElement)
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+)

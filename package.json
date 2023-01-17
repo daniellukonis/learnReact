@@ -1,0 +1,24 @@
+{
+  "name": "learnreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esbuild": "esbuild",
+    "copy": "cp ./src/static/* ./dist",
+    "css": "esbuild ./node_modules/bootstrap/dist/css/bootstrap.min.css --outfile=./dist/bundle.css --bundle --minify",
+    "build": "npm run copy && esbuild ./src/index.js --bundle --loader:.js=jsx --jsx=automatic --outfile=./dist/bundle.js --minify --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.17.1"
+    
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
